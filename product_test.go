@@ -1,12 +1,14 @@
 package enumerate_algorithm
 
 import (
-	"testing"
+	"fmt"
 )
 
-func TestProduct(t *testing.T) {
+func ExampleProduct() {
 	sliceA := []string{"A", "B", "C"}
 	sliceB := []int{1, 2, 3}
 	r := Product(sliceA, sliceB)
-	t.Log(r)
+	fmt.Println(r)
+	// Output:
+	// [("A", 1) ("A", 2) ("A", 3) ("B", 1) ("B", 2) ("B", 3) ("C", 1) ("C", 2) ("C", 3)]
 }
