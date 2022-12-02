@@ -1,5 +1,7 @@
 package enumerate_algorithm
 
+// TODO 2022-12-3 03:24:56 字典序的全排列
+
 // Permutation 全排列
 func Permutation[T any](slice []T) [][]T {
 	return _permutation(slice, 0)
